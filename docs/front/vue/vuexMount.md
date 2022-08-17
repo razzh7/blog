@@ -1,5 +1,7 @@
 # Vuex 的挂载过程
 
+基于[Vuex3.x](https://github.com/vuejs/vuex/tree/3.x)版本
+
 ## 思考 {#think}
 
 - Vuex 是如何引入 Vue 项目的？  
@@ -102,7 +104,7 @@ function applyMixin(Vue) {
 }
 ```
 
-由于我看的是Vuex@3.x的安装方法，所以会走第一个 if 分支，可以看到执行了`Vue.mixin`方法，将`vuexInit`这个方法放到了`beforeCreate`生命周期中传入了 mixin 方法中，这个方法会调用`mergeOptions`方法将其合并到`Vue.options`中,类似这样的代码：
+可以看到执行了`Vue.mixin`方法，将`vuexInit`这个方法放到了`beforeCreate`生命周期中传入了 mixin 方法中，这个方法会调用`mergeOptions`方法将其合并到`Vue.options`中,类似这样的代码：
 
 ```js
 Vue.options = {
@@ -170,13 +172,15 @@ function vuexInit() {
 }
 ```
 
-前面提到这时的$options**已经有了Store实例/方法**,那么有两个if分支，里面的逻辑大致相同，都是为了让`vm.$store`指向`Store 实例`。回想一下我们是怎么向 Vuex 派发内容的？
+前面提到这时的$options**已经有了Store实例/方法**，那么有两个if分支，里面的逻辑大致相同，都是为了让`vm.$store`指向`Store 实例`。回想一下我们是怎么向 Vuex 派发内容的？
 
 ```js
 this.$store.commit('type', playload)
 ```
 
-就是这样！所以上面的逻辑无非是让我们可以全局使用`this.$store`这样的方式去向 Vuex 派发内容,这样 Vuex 的挂载就结束了。
+就是这样！解释一下两个 if 分支的逻辑：  
+1、如果当前是根组件，就把传入的 Store 实例挂在根节点 vm 上  
+2、如果当前组件是子组件，就从 options 中的 parent 找到 Store 实例挂载子组件的 vm 上，这里注意是**引用赋值**，因此每个子组件都可以访问构造`VueComponent`实例上的`$store`
 
 ## 总结 {#summary}
 
