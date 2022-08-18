@@ -12,9 +12,7 @@ export default {
       { text: '📚阅读', link: '/book/' },
       { text: '👴关于我', link: '/me/' }
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/rzhAvenir/blog' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/rzhAvenir/blog' }],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present Razzh'
@@ -54,7 +52,10 @@ function frontEnd() {
     {
       text: 'JavaScript',
       collapsible: true,
-      items: [{ text: 'async-await', link: '/front/js/async-await' }]
+      items: [
+        { text: 'async-await', link: '/front/js/async-await' },
+        { text: 'instanceof实现', link: '/front/js/instanceof' }
+      ]
     }
   ]
 }
