@@ -29,7 +29,7 @@ function frontEnd() {
     {
       text: 'Vue.js',
       collapsible: true,
-      items: [{ text: 'Vuex挂载过程', link: '/front/vue/newVuex' }]
+      items: [{ text: 'Vuex挂载过程', link: '/front/vue/vuexMount' }]
     },
     {
       text: 'koa',
