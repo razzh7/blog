@@ -7,10 +7,9 @@ export default {
     lastUpdated: '最后更新时间',
     logo: '/sign.ico',
     nav: [
-      { text: '🥳前端', link: '/front/' },
-      { text: '🎯算法', link: '/algorithm/' },
-      { text: '📚阅读', link: '/book/' },
-      { text: '👴关于我', link: '/me/' }
+      { text: '前端', link: '/front/' },
+      { text: '阅读', link: '/book/' },
+      { text: '关于我', link: '/me/' }
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/rzhAvenir/blog' }],
     footer: {

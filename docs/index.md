@@ -13,9 +13,6 @@ features:
   - icon: 🧐
     title: Vue
     details: 整理Vue相关的知识
-  - icon: 🏄‍♂️
-    title: 算法
-    details: 折腾折腾算法
   - icon: 🛠️
     title: 项目日常
     details: 开发与维护
