@@ -9,10 +9,10 @@
   tag: 'Vue',
   cover: '/blog/images/vue2.jpeg'
 },{
-  title: '停止你的内在战争',
-  spine: '#E45D42',
+  title: 'JavaScript设计模式与开发实践',
+  spine: '#1D4699',
   tag: '',
-  cover: '/blog/images/stopwar.jpeg'
+  cover: '/blog/images/jsDesign.jpeg'
 }
 ]"></VirtualBook>
 
@@ -24,6 +24,11 @@ title: '时间从来不语，却回答了所有问题',
 spine: '#E5CA9D',
 tag: '',
 cover: '/blog/images/time.jpeg'
+},{
+  title: '停止你的内在战争',
+  spine: '#E45D42',
+  tag: '',
+  cover: '/blog/images/stopwar.jpeg'
 }
 ]"></VirtualBook>
 
@@ -66,10 +71,5 @@ cover: '/blog/images/javascript.jpeg'
   spine: '#FFFFFF',
   tag: '',
   cover: '/blog/images/node.jpeg'
-},{
-  title: 'JavaScript设计模式与开发实践',
-  spine: '#1D4699',
-  tag: '',
-  cover: '/blog/images/jsDesign.jpeg'
 }
 ]"></VirtualBook>
