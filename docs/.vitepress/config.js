@@ -5,7 +5,7 @@ export default {
   lang: 'zh-CN',
   themeConfig: {
     lastUpdated: '最后更新时间',
-    logo: '/sign.ico',
+    logo: '/dandelion.jpeg',
     nav: [
       { text: '前端', link: '/front/' },
       { text: '阅读', link: '/book/' },
@@ -20,7 +20,7 @@ export default {
       '/front/': frontEnd()
     }
   },
-  head: [['link', { rel: 'shortcut icon', href: '/blog/sign.ico' }]]
+  head: [['link', { rel: 'shortcut icon', href: '/blog/dandelion.jpeg' }]]
 }
 
 function frontEnd() {
