@@ -52,7 +52,7 @@ function frontEnd() {
       text: 'JavaScript',
       collapsible: true,
       items: [
-        { text: 'async-await', link: '/front/js/async-await' },
+        { text: 'JS 继承方式', link: '/front/js/extends' },
         { text: 'instanceof实现', link: '/front/js/instanceof' }
       ]
     }
