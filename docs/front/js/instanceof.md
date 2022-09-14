@@ -34,3 +34,4 @@ fucntion _myInstanceof(target, origin) {
   return false
 }
 ```
+<theEnd />
