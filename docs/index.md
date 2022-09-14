@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /front/
+      link: /front/vue/vuexMount
 
 features:
   - icon: 🧐
