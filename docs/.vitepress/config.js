@@ -53,6 +53,7 @@ function frontEnd() {
       collapsible: true,
       items: [
         { text: 'JS 继承方式', link: '/front/js/extends' },
+        { text: 'var、let、const 的区别', link: '/front/js/varletconst' },
         { text: 'instanceof实现', link: '/front/js/instanceof' }
       ]
     }
