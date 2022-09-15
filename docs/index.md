@@ -12,7 +12,10 @@ hero:
 features:
   - icon: 🧐
     title: Vue
-    details: 整理Vue相关的知识
+    details: 整理 Vue 相关的知识
+  - icon: 🌟
+    title: JavaScript
+    details: JS 基础巩固
   - icon: 🛠️
     title: 项目日常
     details: 开发与维护
