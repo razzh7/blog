@@ -57,6 +57,13 @@ function frontEnd() {
         { text: 'var、let、const 的区别', link: '/front/js/varletconst' },
         { text: 'instanceof实现', link: '/front/js/instanceof' }
       ]
+    },
+    {
+      text: 'Node.js',
+      collapsible: true,
+      items: [
+        { text: 'path.resolve到底怎么用？', link: '/front/node/resolve' }
+      ]
     }
   ]
 }
