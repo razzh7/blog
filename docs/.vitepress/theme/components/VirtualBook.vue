@@ -167,6 +167,7 @@ export default {
   position: absolute;
   bottom: 0px;
   left: 20%; /* no idea why 20% centers it */
+  font-size: 12px;
 }
 
 .book__top {
