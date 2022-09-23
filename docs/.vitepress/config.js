@@ -31,11 +31,6 @@ function frontEnd() {
       items: [{ text: 'Vuex 挂载过程', link: '/front/vue/vuexMount' }]
     },
     {
-      text: 'koa',
-      collapsible: true,
-      items: [{ text: 'koa', link: '/front/koa/koa' }]
-    },
-    {
       text: 'VueUse',
       collapsible: true,
       items: [
@@ -62,7 +57,8 @@ function frontEnd() {
       text: 'Node.js',
       collapsible: true,
       items: [
-        { text: 'path.resolve 到底怎么用？', link: '/front/node/resolve' }
+        { text: 'path.resolve 到底怎么用？', link: '/front/node/resolve' },
+        { text: 'koa 深入洋葱模型', link: '/front/node/koa-onion-model'}
       ]
     }
   ]
