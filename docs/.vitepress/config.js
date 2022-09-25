@@ -28,7 +28,10 @@ function frontEnd() {
     {
       text: 'Vue.js',
       collapsible: true,
-      items: [{ text: 'Vuex 挂载过程', link: '/front/vue/vuexMount' }]
+      items: [
+        { text: 'Vuex 挂载过程', link: '/front/vue/vuexMount' },
+        { text: 'Vue set', link: '/front/vue/set' }
+      ]
     },
     // {
     //   text: 'VueUse',
