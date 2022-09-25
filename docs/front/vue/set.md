@@ -39,7 +39,7 @@ var vm = new Vue({
 ```
 这个时候点击 `div` 页面视图也随之更新为`['a', 2, 3]`。  
 
-这时候
+顺着这个思路，我想到在生命周期 `created` 中通过下标修改数组的值，那么此时视图会变吗？
 ```javascript
 var vm = new Vue({
   el: '#app',
