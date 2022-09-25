@@ -7,7 +7,8 @@
 4、[instranceof 实现](https://rzhavenir.github.io/blog/front/js/instanceof.html)
 
 ## Vue系列
-1、[Vuex 挂载过程](https://rzhavenir.github.io/blog/front/vue/vuexMount.html)
+1、[Vuex 挂载过程](https://rzhavenir.github.io/blog/front/vue/vuexMount.html)  
+2、[Vue.set](https://rzhavenir.github.io/blog/front/vue/set.html)
 
 ## Node系列
 1、[path.resolve 到底怎么用？](https://rzhavenir.github.io/blog/front/node/resolve.html)  
