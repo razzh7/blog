@@ -6,11 +6,11 @@
 3. [var、let、const 的区别](https://rzhavenir.github.io/blog/front/js/varletconst.html)  
 4. [instranceof 实现](https://rzhavenir.github.io/blog/front/js/instanceof.html)
 
-## Vue系列
+## Vue 系列
 1. [Vuex 挂载过程](https://rzhavenir.github.io/blog/front/vue/vuexMount.html)  
 2. [Vue.set](https://rzhavenir.github.io/blog/front/vue/set.html)
 
-## Node系列
+## Node 系列
 1. [path.resolve 到底怎么用？](https://rzhavenir.github.io/blog/front/node/resolve.html)  
 2. [koa 深入洋葱模型](https://rzhavenir.github.io/blog/front/node/koa-onion-model.html)
 ## ElementPlus
