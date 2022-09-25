@@ -30,14 +30,14 @@ function frontEnd() {
       collapsible: true,
       items: [{ text: 'Vuex 挂载过程', link: '/front/vue/vuexMount' }]
     },
-    {
-      text: 'VueUse',
-      collapsible: true,
-      items: [
-        { text: 'useAxios', link: '/front/vue-use/useAxios' },
-        { text: 'useDark', link: '/front/vue-use/useDark' }
-      ]
-    },
+    // {
+    //   text: 'VueUse',
+    //   collapsible: true,
+    //   items: [
+    //     { text: 'useAxios', link: '/front/vue-use/useAxios' },
+    //     { text: 'useDark', link: '/front/vue-use/useDark' }
+    //   ]
+    // },
     {
       text: 'Element-Plus',
       collapsible: true,
