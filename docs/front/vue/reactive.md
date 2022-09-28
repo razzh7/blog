@@ -31,8 +31,8 @@ let updateComponent = () => {
 ```
 可以看到它会先执行 [vm._render](https://github.com/vuejs/vue/blob/612fb89547/src/core/instance/render.js#L69-L129) 方法，会经过3个步骤生成 `Render 函数`：  
 - parse 生成 AST 树  
-- optimize 为 AST 树加上StaicNode  
-- generate 将 AST 树转换为 Render 函数  
+- optimize 为 AST 树加上 static 属性
+- generate 将 AST 树转换为 render 函数  
 
 
 具体过程可以在[这里](https://github.com/vuejs/vue/blob/612fb89547/src/compiler/index.js#L11-L25)可以看到  
