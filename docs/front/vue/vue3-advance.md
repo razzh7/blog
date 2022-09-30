@@ -46,4 +46,5 @@
 
 3. 更好的类型支持，在调用函数时，所有的类型就被推导出来了，不像 `OptionsAPI` 所有东西都使用 `this`。  
 
-4. `Compostion API` 对 `tree-shaking` 更友好，代码也更容易压缩。
+4. `Compostion API` 对 `tree-shaking` 更友好，代码也更容易压缩。  
+<TheEnd />
