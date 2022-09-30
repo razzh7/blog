@@ -32,6 +32,7 @@ function frontEnd() {
         { text: 'Vue 响应式流程', link: '/front/vue/reactive'},
         { text: 'Vue.set 原理', link: '/front/vue/set' },
         { text: 'Vuex 挂载过程', link: '/front/vue/vuexMount' },
+        { text: 'Vue3 提升主要提升哪块？', link: '/front/vue/vue3-advance' },
       ]
     },
     // {
