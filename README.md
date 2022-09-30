@@ -10,6 +10,7 @@
 1. [Vue 响应式流程](https://rzhavenir.github.io/blog/front/vue/reactive.html)  
 2. [Vue.set 原理](https://rzhavenir.github.io/blog/front/vue/set.html)  
 3. [Vuex 挂载过程](https://rzhavenir.github.io/blog/front/vue/vuexMount.html)  
+4. [Vue3 提升](https://rzhavenir.github.io/blog/front/vue/vue3-advance.html)
 
 ## Node 系列
 1. [path.resolve 到底怎么用？](https://rzhavenir.github.io/blog/front/node/resolve.html)  
