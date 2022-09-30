@@ -44,11 +44,6 @@ function frontEnd() {
     //   ]
     // },
     {
-      text: 'Element-Plus',
-      collapsible: true,
-      items: [{ text: 'switch', link: '/front/element-plus/switch' }]
-    },
-    {
       text: 'JavaScript',
       collapsible: true,
       items: [
@@ -65,6 +60,11 @@ function frontEnd() {
         { text: 'path.resolve 到底怎么用？', link: '/front/node/resolve' },
         { text: 'koa 深入洋葱模型', link: '/front/node/koa-onion-model'}
       ]
-    }
+    },
+    {
+      text: 'Element-Plus',
+      collapsible: true,
+      items: [{ text: 'switch', link: '/front/element-plus/switch' }]
+    },
   ]
 }
