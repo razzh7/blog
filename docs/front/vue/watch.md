@@ -106,7 +106,7 @@ export function parsePath (path: string): any {
 `parsePath` 方法遍历 `path`，比如 `'car.brand'`，会被存进一个**闭包环境**下的 `segments` 的数组里面: `['car', 'barnd']`，并返回一个匿名函数，它会在 Watcher 中的 [this.value = this.get()](https://github.com/vuejs/vue/blob/v2.6.14/src/core/observer/watcher.js#L102-L124) 中调用 `getter` 方法触发，并保存 `value` 的值。  
 
 匿名函数的核心思想是通过遍历 `segments` 中的 `path`，在取值时： `obj[segments[i]]`，触发该属性的 `getter` 函数**收集依赖**，赋值操作 `obj = obj[segments[i]]`，触发 `setter` 函数，通知视图更新。  
-  
+
 那么，我们在 `watch` 选项中传入的**回调函数**何时触发？当**视图更新时**，`Watcher` 实例上的 [run](https://github.com/vuejs/vue/blob/v2.6.14/src/core/observer/watcher.js#L180-L202) 最终会被调用：
 ```js
 run () {
@@ -254,5 +254,7 @@ class Watcher {
 [Vue.js 技术揭秘 计算属性 vs 侦听属性](https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#watcher-options)  
 [Vue2剥丝抽茧-响应式系统之watch](https://vue.windliang.wang/posts/Vue2%E5%89%A5%E4%B8%9D%E6%8A%BD%E8%8C%A7-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B9%8Bwatch.html#%E5%9C%BA%E6%99%AF)  
 [Vue2剥丝抽茧-响应式系统之watch2](https://vue.windliang.wang/posts/Vue2%E5%89%A5%E4%B8%9D%E6%8A%BD%E8%8C%A7-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B9%8Bwatch2.html#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF-2)
+
+<TheEnd />
 
 
