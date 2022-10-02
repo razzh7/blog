@@ -31,6 +31,7 @@ function frontEnd() {
       items: [
         { text: 'Vue 响应式流程', link: '/front/vue/reactive'},
         { text: 'Vue.set 原理', link: '/front/vue/set' },
+        { text: 'watch 实现原理', link: '/front/vue/watch' },
         { text: 'Vuex 挂载过程', link: '/front/vue/vuexMount' },
         { text: 'Vue3 提升', link: '/front/vue/vue3-advance' },
       ]
