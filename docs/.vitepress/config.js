@@ -7,7 +7,7 @@ export default {
     lastUpdated: '最后更新时间',
     logo: '/dandelion.jpeg',
     nav: [
-      { text: '前端', link: '/front/' },
+      { text: '前端', link: '/front/vue/reactive' },
       { text: '阅读', link: '/book/' },
       { text: '关于我', link: '/me/' }
     ],
