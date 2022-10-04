@@ -252,8 +252,8 @@ class Watcher {
 
 ## 参考 {#refer}
 [Vue.js 技术揭秘 计算属性 vs 侦听属性](https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#watcher-options)  
-[Vue2剥丝抽茧-响应式系统之watch](https://vue.windliang.wang/posts/Vue2%E5%89%A5%E4%B8%9D%E6%8A%BD%E8%8C%A7-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B9%8Bwatch.html#%E5%9C%BA%E6%99%AF)  
-[Vue2剥丝抽茧-响应式系统之watch2](https://vue.windliang.wang/posts/Vue2%E5%89%A5%E4%B8%9D%E6%8A%BD%E8%8C%A7-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B9%8Bwatch2.html#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF-2)
+[Vue2 剥丝抽茧-响应式系统之watch](https://vue.windliang.wang/posts/Vue2%E5%89%A5%E4%B8%9D%E6%8A%BD%E8%8C%A7-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B9%8Bwatch.html#%E5%9C%BA%E6%99%AF)  
+[Vue2 剥丝抽茧-响应式系统之watch2](https://vue.windliang.wang/posts/Vue2%E5%89%A5%E4%B8%9D%E6%8A%BD%E8%8C%A7-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B9%8Bwatch2.html#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF-2)
 
 <TheEnd />
 
