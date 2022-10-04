@@ -3,7 +3,7 @@
 计算属性的特点是基于**它们的响应式依赖进行缓存的**，只有在响应式依赖发生改变时，才能重新会重新求值，这就意味着，当计算属性中的响应式依赖未发生改变时，计算属性会立即返回之前计算的结果。
 
 ## 核心源码分析 {#source}
-当组件初始化的时候，如果组件中有 `computed` 属性，那么则会 [initComputed]((https://github.com/vuejs/vue/blob/v2.6.14/src/core/instance/state.js#L49-L63)): 
+当组件初始化的时候，如果组件中有 `computed` 属性，那么则会 [initComputed](https://github.com/vuejs/vue/blob/v2.6.14/src/core/instance/state.js#L170-L211): 
 ```js {20,21,22,23,24,25}
 const computedWatcherOptions = { lazy: true }
 function initComputed (vm: Component, computed: Object) {
@@ -131,7 +131,7 @@ function createComputedGetter (key) {
 - `dirty` 为 `true`，说明数据已经“脏了”，需要更新
 - `dirty` 为 `false`，说明数据不是“脏数据”，不需要更新
 
-`computed` 的缓存上次一计算的结果就是这样实现的，当 `dirty` 为 `fasle` 的时候，代表数据没有变动，直接返回 `watcher.value` 的结果即可。
+`computed` 缓存上次一计算的结果的功能就是这样实现的，当 `dirty` 为 `fasle` 的时候，代表数据没有变动，直接返回 `watcher.value` 的结果即可。
   
 之后看一下 `evaluate` 方法：
 ```js
