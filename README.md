@@ -1,5 +1,5 @@
 # 我的博客
-我是小豪👋，这里是我记录我技术成长的地方，希望大家能够一起进步！
+我是小豪 👋，这里是我记录我技术学习的地方，希望大家能够一起进步！
 ## JavaScript 深入系列
 1. [JS 模块化](https://rzhavenir.github.io/blog/front/js/module.html)  
 2. [JS 继承方式](https://rzhavenir.github.io/blog/front/js/extends.html)  
