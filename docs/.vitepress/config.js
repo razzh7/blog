@@ -68,5 +68,10 @@ function frontEnd() {
       collapsible: true,
       items: [{ text: 'switch', link: '/front/element-plus/switch' }]
     },
+    {
+      text: '计算机网络',
+      collapsible: true,
+      items: [{ text: 'TCP 和 UDP 的区别', link: '/front/network/tcp-udp' }]
+    },
   ]
 }
