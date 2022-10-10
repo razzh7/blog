@@ -283,3 +283,5 @@ A.sayHello();// 还是以为输出A ? 错啦，其实输出的是 window
 2. 由 `call` 或者 `apply` (或者 `bind`)调用？`this` 绑定到指定对象  
 3. 由上下文对象调用？`this` 绑定到那个上下文对象  
 4. 默认：在严格模式下绑定到 `undefined`，否则 `this` 绑定到全局对象
+
+<TheEnd />
