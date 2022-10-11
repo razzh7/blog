@@ -1,10 +1,11 @@
 # 我的博客
-我是小豪 👋，这里是我记录我技术学习的地方，希望大家能够一起进步！
+我是小豪 👋，这里是我记录我技术学习的地方，希望大家能够一起进步 🚀
 ## JavaScript 深入系列
 1. [JS 模块化](https://rzhavenir.github.io/blog/front/js/module.html)  
 2. [JS 继承方式](https://rzhavenir.github.io/blog/front/js/extends.html)  
-3. [var、let、const 的区别](https://rzhavenir.github.io/blog/front/js/varletconst.html)  
-4. [instranceof 实现](https://rzhavenir.github.io/blog/front/js/instanceof.html)
+3. [this 指向总结](https://rzhavenir.github.io/blog/front/js/this.html)  
+4. [var、let、const 的区别](https://rzhavenir.github.io/blog/front/js/varletconst.html)  
+5. [instranceof 实现](https://rzhavenir.github.io/blog/front/js/instanceof.html)
 
 ## Vue 系列
 1. [Vue 响应式流程](https://rzhavenir.github.io/blog/front/vue/reactive.html)  
