@@ -72,7 +72,10 @@ function frontEnd() {
     {
       text: '计算机网络',
       collapsible: true,
-      items: [{ text: 'TCP 和 UDP 的区别', link: '/front/network/tcp-udp' }]
+      items: [
+        { text: 'HTTP 协议', link: '/front/network/http' },
+        { text: 'TCP 和 UDP 的区别', link: '/front/network/tcp-udp' }
+      ]
     },
   ]
 }
