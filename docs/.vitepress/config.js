@@ -77,5 +77,12 @@ function frontEnd() {
         { text: 'TCP 和 UDP 的区别', link: '/front/network/tcp-udp' }
       ]
     },
+    {
+      text: '项目',
+      collapsible: true,
+      items: [
+        { text: '记一次项目测试框架选型', link: '/front/project/select-test'}
+      ]
+    }
   ]
 }
