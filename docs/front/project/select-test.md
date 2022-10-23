@@ -72,7 +72,7 @@ describe('Array', function () {
 - 同时支持 `Chorme`、`Edge`、`Firefox` 三款浏览器
 
 ## 调研路上的竞品 Playwright {#playwright}
-在调研的路上发现 [Playwright](https://playwright.dev/) 的热度也非常高，它支持5种主流浏览器： `Chorme`、`Edge`、`Firefox`、`Opera`、`Safari`。并且最近在 [antfu](https://github.com/antfu) 的直播[新工具！前端运行时报错检查](https://www.bilibili.com/video/BV1Hg41127JK/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=bfa2bf7637de4c473ec14d1189acac7f)中 `core` 功能也主要是用 `Playwright` 来做的。  
+在调研的路上发现 [Playwright](https://playwright.dev/) 的热度也非常高，它支持5种主流浏览器： `Chorme`、`Edge`、`Firefox`、`Opera`、`Safari`。并且最近在大佬 [antfu](https://github.com/antfu) 的直播[新工具！前端运行时报错检查](https://www.bilibili.com/video/BV1Hg41127JK/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=bfa2bf7637de4c473ec14d1189acac7f)中 `core` 功能也主要是用 `Playwright` 来做的。  
 
 总之，给人的感觉非常的 `magic` ！
 
