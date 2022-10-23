@@ -5,7 +5,7 @@ export default {
   lang: 'zh-CN',
   themeConfig: {
     lastUpdated: '最后更新时间',
-    logo: '/dandelion.jpeg',
+    logo: '/bird.png',
     nav: [
       { text: '前端', link: '/front/vue/reactive' },
       { text: '阅读', link: '/book/' },
@@ -20,7 +20,7 @@ export default {
       '/front/': frontEnd()
     }
   },
-  head: [['link', { rel: 'shortcut icon', href: '/blog/dandelion.jpeg' }]]
+  head: [['link', { rel: 'shortcut icon', href: '/blog/bird.png' }]]
 }
 
 function frontEnd() {
