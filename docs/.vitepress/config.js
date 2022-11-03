@@ -52,9 +52,9 @@ function frontEnd() {
         { text: 'JS 模块化', link: '/front/js/module' },
         { text: 'JS 继承方式', link: '/front/js/extends' },
         { text: 'this 指向总结', link: '/front/js/this' },
-        { text: 'var、let、const 的区别', link: '/front/js/varletconst' },
         { text: 'new 实现', link: '/front/js/new' },
-        { text: 'instanceof 实现', link: '/front/js/instanceof' }
+        { text: 'instanceof 实现', link: '/front/js/instanceof' },
+        { text: 'var、let、const 的区别', link: '/front/js/varletconst' }
       ]
     },
     {
