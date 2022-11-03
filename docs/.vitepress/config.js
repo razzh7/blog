@@ -29,12 +29,12 @@ function frontEnd() {
       text: 'Vue.js',
       collapsible: true,
       items: [
-        { text: 'Vue 响应式流程', link: '/front/vue/reactive'},
+        { text: 'Vue 响应式流程', link: '/front/vue/reactive' },
         { text: 'Vue.set 实现原理', link: '/front/vue/set' },
         { text: 'watch 实现原理', link: '/front/vue/watch' },
         { text: 'computed 实现原理', link: '/front/vue/computed' },
         { text: 'Vuex 挂载过程', link: '/front/vue/vuexMount' },
-        { text: 'Vue3 提升', link: '/front/vue/vue3-advance' },
+        { text: 'Vue3 提升', link: '/front/vue/vue3-advance' }
       ]
     },
     // {
@@ -53,6 +53,7 @@ function frontEnd() {
         { text: 'JS 继承方式', link: '/front/js/extends' },
         { text: 'this 指向总结', link: '/front/js/this' },
         { text: 'var、let、const 的区别', link: '/front/js/varletconst' },
+        { text: 'new 实现', link: '/front/js/new' },
         { text: 'instanceof 实现', link: '/front/js/instanceof' }
       ]
     },
@@ -61,7 +62,7 @@ function frontEnd() {
       collapsible: true,
       items: [
         { text: 'path.resolve 到底怎么用？', link: '/front/node/resolve' },
-        { text: 'koa 深入洋葱模型', link: '/front/node/koa-onion-model'}
+        { text: 'koa 深入洋葱模型', link: '/front/node/koa-onion-model' }
       ]
     },
     {
@@ -80,9 +81,7 @@ function frontEnd() {
     {
       text: '项目',
       collapsible: true,
-      items: [
-        { text: '记一次项目测试框架选型', link: '/front/project/select-test'}
-      ]
+      items: [{ text: '记一次项目测试框架选型', link: '/front/project/select-test' }]
     }
   ]
 }
