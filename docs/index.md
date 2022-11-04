@@ -1,9 +1,5 @@
----
-page: true
----
-
 <script setup>
-import Home from './.vitepress/theme/components/Home.vue'
+import Home from '.vitepress/theme/components/Home.vue'
 </script>
 
 <Home />
