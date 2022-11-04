@@ -5,7 +5,8 @@
 2. [JS 继承方式](https://rzhavenir.github.io/blog/front/js/extends.html)  
 3. [this 指向总结](https://rzhavenir.github.io/blog/front/js/this.html)  
 4. [var、let、const 的区别](https://rzhavenir.github.io/blog/front/js/varletconst.html)  
-5. [instranceof 实现](https://rzhavenir.github.io/blog/front/js/instanceof.html)
+5. [new 实现](https://rzhavenir.github.io/blog/front/js/new.html)  
+6. [instranceof 实现](https://rzhavenir.github.io/blog/front/js/instanceof.html)
 
 ## Vue 系列
 1. [Vue 响应式流程](https://rzhavenir.github.io/blog/front/vue/reactive.html)  
