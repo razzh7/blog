@@ -1,5 +1,6 @@
 <template>
-  <section id="hero">
+  <div>
+    <section id="hero">
     <h1 class="tagline">
       <span class="accent">
         时间从来不语
@@ -10,7 +11,7 @@
       Time never speaks but answered all the questions.
     </p>
     <p class="actions">
-      <a class="get-started" href="/front/vue/reactive.html">
+      <a class="get-started" href="/blog/front/vue/reactive">
         开始阅读
         <svg
           class="icon"
@@ -46,6 +47,7 @@
       </p>
     </div>
   </section>
+  </div>
 </template>
 
 <style scoped>
@@ -70,7 +72,6 @@ section {
 html:not(.dark) .accent,
 .dark .tagline {
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
-  /* background: -webkit-linear-gradient(315deg, #2196f3 25%, #f44336);; */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
