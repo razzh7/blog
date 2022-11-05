@@ -27,23 +27,29 @@
       </a>
     </p>
   </section>
+    <!-- TODO make dynamic based on data -->
+    <section id="special-sponsor">
+    <a class="steps" target="_blank" href="https://www.bilibili.com/video/BV1XW4y1j7VX/?spm_id_from=333.999.0.0&vd_source=bfa2bf7637de4c473ec14d1189acac7f">
+      9阶台阶，32次跌倒
+    </a>
+  </section>
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
-      <h2>Vue</h2>
+      <h2>Vue.js</h2>
       <p>
-        沉淀 Vue.js 知识
+        整理沉淀 Vue 内容。
       </p>
     </div>
     <div class="vt-box">
       <h2>JavaScript</h2>
       <p>
-        JS 基础巩固
+        总结分享平时看书、冲浪学到的知识点。
       </p>
     </div>
     <div class="vt-box">
-      <h2>项目日常</h2>
+      <h2>前端工程化</h2>
       <p>
-        开发与维护
+       记录学习 Webpack、Vite 等工程化工具知识。
       </p>
     </div>
   </section>
@@ -51,12 +57,18 @@
 </template>
 
 <style scoped>
+.steps {
+  font-weight: 500;
+  color: var(--vp-c-brand);
+  text-decoration-style: dotted;
+  transition: color 0.25s;
+}
 section {
   padding: 42px 32px;
 }
 
 #hero {
-  padding: 96px 32px 0 32px;
+  padding: 96px 32px;
   text-align: center;
 }
 
@@ -161,7 +173,7 @@ html:not(.dark) .accent,
 #highlights {
   max-width: 960px;
   margin: 0px auto;
-  padding: 0;
+  /* padding: 0 200px; */
   color: var(--vt-c-text-2);
 }
 
