@@ -82,6 +82,11 @@ function frontEnd() {
       text: '项目',
       collapsible: true,
       items: [{ text: '记一次项目测试框架选型', link: '/front/project/select-test' }]
+    },
+    {
+      text: '前端工程化',
+      collapsible: true,
+      items: [{ text: '从零搭建 Taro 多端编译环境', link: '/front/engineer/taro' }]
     }
   ]
 }
