@@ -2,7 +2,7 @@
 之前公司有微信小程序和 H5 双端编译的需求，所以自己用 Taro3 + Vue3 + Ts 搭了一个项目：[仓库地址](https://github.com/rzhAvenir/taro-vue3-template)
 ## 一、搭建项目架构 {#project}
 
-#### 初始化项目
+### 初始化项目
 
 初始化项目之前，需安装 `taro-cli`，请参考 [Taro 文档](https://taro-docs.jd.com/taro/docs/GETTING-STARTED)，完成 `tarojs` 安装
 
@@ -35,7 +35,7 @@ pnpm dev weapp
 
 ![img](/img/exceed-size.png)
 
-`H5` 默认开启 `webpack-bundle-analyzer` 来分析打包后的依赖：
+`H5` 若需要开启依赖分析，可以在 [config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js#L5-L7) 中开启 `webpack-bundle-analyzer` 来分析打包后的依赖：
 
 ![img](/img/webpack-analyzer.png)
 
@@ -44,13 +44,13 @@ pnpm dev weapp
 - 代码规范 ESlint
 - 代码格式化 Prettier
 
-#### 1、安装依赖
+### 1、安装依赖
 
 ```shell
 pnpm add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin-prettier prettier -D
 ```
 
-#### 2、设置配置
+### 2、设置配置
 
 目录下新增 `.eslintrc.js` 和 `.prettierrc` 文件，具体配置可以按自己的喜好来。   
 如果 VSCode 中已经存在插件 prettier，请关闭。两者在保存的时候，VSCode 中的 prettier 插件的优先级大于项目中的 prettier。
@@ -63,7 +63,7 @@ pnpm add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin
 - Git 自动生成 commit 信息 [changelog](https://github.com/conventional-changelog-archived-repos/conventional-changelog-cli)
 - Git 版本控制 [standard-version](https://www.npmjs.com/package/standard-version)
 
-#### 1、husky
+### 1、husky
 
 ```shell
 pnpm add husky -D
@@ -73,7 +73,7 @@ npm set-script prepare "husky install"
 pnpm prepare
 ```
 
-#### 2、lint-staged
+### 2、lint-staged
 
 ```shell
 pnpm add lint-staged -D
@@ -84,7 +84,7 @@ npx husky add .husky/pre-commit "npx lint-staged"
 
 ![img](/img/staged-lint.png)
 
-#### 3、commitlint
+### 3、commitlint
 
 用于规范 git commit 提交的时候的信息格式，有助于多人开发时候的 commit 信息统一规范
 
@@ -115,7 +115,7 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 
 ![图片](https://raw.githubusercontent.com/conventional-changelog/commitlint/6181d69c25371fd5830a5a9b7173a200d3c9fed5/docs/assets/commitlint.svg)
 
-#### 4、conventional-changelog
+### 4、conventional-changelog
 
 用于记录 CHANGELOG 日志，可以看到团队的更新日志，并能点击对应的 commit 看相应的代码
 
@@ -125,7 +125,7 @@ pnpm add conventional-changelog conventional-changelog-cli -D
 
 [Example](https://github.com/karma-runner/karma/blob/master/CHANGELOG.md)
 
-#### 5、standard-version
+### 5、standard-version
 
 ```
 pnpm add standard-version -D
@@ -143,7 +143,7 @@ npm set-script release "standard-version"
 npm run release -- --release-as xxx (you want version)
 ```
 
-#### 发版的工作流
+### 发版的工作流
 
 - git add .
 - git commit -m "feat: xxx"
