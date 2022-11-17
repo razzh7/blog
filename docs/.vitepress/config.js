@@ -20,7 +20,7 @@ export default {
       '/front/': frontEnd()
     }
   },
-  head: [['link', { rel: 'shortcut icon', href: '/blog/bird.png' }]],
+  head: [['link', { rel: 'shortcut icon', href: '/blog/bird.png' }]]
 }
 
 function frontEnd() {
@@ -81,7 +81,10 @@ function frontEnd() {
     {
       text: '项目',
       collapsible: true,
-      items: [{ text: '记一次项目测试框架选型', link: '/front/project/select-test' }]
+      items: [
+        { text: '记一次项目测试框架选型', link: '/front/project/select-test' },
+        { text: '动态路由的两种实现方式', link: '/front/project/dynamic-router' }
+      ]
     },
     {
       text: '前端工程化',
