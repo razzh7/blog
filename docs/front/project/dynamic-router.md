@@ -2,7 +2,7 @@
 
 今天看了公司中后台项目中动态路由的实现，基于 [AntAdmin](https://github.com/iczer/vue-antd-admin) 模版。发现它跟 [ElementAdmin](https://github.com/PanJiaChen/vue-element-admin) 的实现方式大不相同，于是打算记录一下两大主流 Vue 后台框架的动态路由实现的差异。
 
-## ElementAdmin {#element-admin}
+## ElementAdmin 实现 {#element-admin}
 
 将本地 `router/index.js` 存到服务端，然后返回数据。
 
@@ -51,7 +51,7 @@ const router = [
 ]
 ```
 
-## AntAdmin {#ant-admin}
+## AntAdmin 实现 {#ant-admin}
 
 本地存下完整的 `router` 信息，服务端也返回路由信息，但服务端返回的信息不包含 **component** 字段，类似这样：
 
