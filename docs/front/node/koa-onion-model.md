@@ -79,21 +79,21 @@ function compose (middleware) {
 ## 例子 {#exmple}
 ```js
 const m1 = async (context, next) => {
-  console.log('in-1');
-  await next();
-  console.log('out-1', res);
+  console.log('in-1')
+  await next()
+  console.log('out-1', res)
 };
 const m2 = async (context, next) => {
-  console.log('in-2');
-  await next();
-  console.log('out-2');
+  console.log('in-2')
+  await next()
+  console.log('out-2')
 };
 const m3 = async (context, next) => {
-  console.log('in-3');
-  await next();
-  console.log('out-3');
+  console.log('in-3')
+  await next()
+  console.log('out-3')
 };
-compose([m1, m2, m3])();
+compose([m1, m2, m3])()
 
 //output
 // in-1
