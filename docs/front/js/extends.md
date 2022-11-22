@@ -140,8 +140,6 @@ console.log(t.superOwner) // razzh
 console.log(t.getBrand()) // ['Ford', 'Cadillac']
 ```
 
-实际上，这个 `object` 函数其实是 ES5 新增的 `Object.create()` 方法的**Pollify**。
-
 - 优点：这种方式的高效率体现在它只调用了一次 `SuperType` 构造函数，并且因此避免了 `SubType.prototype` 上面创建不必要、多余的属性。
 
 ## 5、Class 继承
