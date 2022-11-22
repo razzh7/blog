@@ -114,35 +114,30 @@ console.log(instance2.skill) // ['Ford', 'Cadillac']
 寄生组合式继承**避免了组合继承中调用两次父类构造函数**，是引用类型最理想的继承范式。
 
 ```javascript
-function object(o) {
-  function W() {}
-  W.prototype = o
-  return new W()
-}
 
 function SuperType() {
-  this.superOwner = 'razzh'
-  this.brand = ['Ford', 'Cadillac']
+  this.superOwner = arguments[0]
+  this.brand = arguments[1]
 }
+
 SuperType.prototype.getBrand = function () {
   return this.brand
 }
 
 function SubType() {
-  SuperType.call(this)
+  SuperType.apply(this, arguments)
   this.subOwner = 'ff'
 }
 
-function inheritPrototype(SubType, SuperType) {
-  var prototype = object(SuperType.prototype) // Object.create() Pollify
-  prototype.constructor = SubType
-  SubType.prototype = prototype
-}
+SubType.prototype = Object.create(SuperType.prototype, {
+  constructor: {
+    value: SubType
+  }
+})
 
-inheritPrototype(SubType, SuperType)
-var t = new SubType()
-console.log(t.getBrand()) // ['Ford', 'Cadillac']
+var t = new SubType('razzh', ['Ford', 'Cadillac'])
 console.log(t.superOwner) // razzh
+console.log(t.getBrand()) // ['Ford', 'Cadillac']
 ```
 
 实际上，这个 `object` 函数其实是 ES5 新增的 `Object.create()` 方法的**Pollify**。
