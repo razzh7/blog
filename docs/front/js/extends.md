@@ -47,21 +47,23 @@ console.log(instance2.brand) // ['Ford', 'Cadillac', 'Benz']
 
 ```javascript {18}
 function SuperType() {
-  this.superOwner = 'razzh'
-  this.brand = ['Ford', 'Cadillac']
+  this.superOwner = arguments[0]
+  this.brand = arguments[1]
 }
+
 SuperType.prototype.getSuperValue = function () {
   return this.superOwner
 }
 
 function SubType() {
-  SuperType.call(this)
+  SuperType.apply(this, arguments)
   this.subOwner = 'ff'
 }
+
 SubType.prototype.subProperty = '我是子属性'
 
-var instance1 = new SubType()
-var instance2 = new SubType()
+var instance1 = new SubType('razzh',  ['Ford', 'Cadillac'])
+var instance2 = new SubType('razzh',  ['Ford', 'Cadillac'])
 instance1.brand.push('Benz')
 // console.log(instance.getSuperValue()) // throw error
 console.log(instance1.subProperty) // 我是子属性
