@@ -20,6 +20,7 @@
 ```
 
 当我们点击按钮时，视图会发生更新，会触发 [set](https://github.com/vuejs/vue/blob/v2.6.14/src/core/observer/index.js#L173-L192) 函数，最终调用其 `dep.notify` 方法， `notify` 方法中会对 `subs` 依赖数组进行 [update](https://github.com/vuejs/vue/blob/612fb89547711cacb030a3893a0065b785802860/src/core/observer/watcher.js#L165-L174) 操作，我们知道 `Vue` 的渲染机制是组件为单位，基于**JavaScript 的事件循环机制**异步渲染的，所以在数据变化后，我们不能立刻更新视图，而是将它保存在一个队列 `queue` 中，我们执行 [queueWatcher](https://github.com/vuejs/vue/blob/612fb89547711cacb030a3893a0065b785802860/src/core/observer/watcher.js#L172) 方法，将**渲染 watcher** 放入队列中。  
+
 之后会执行 [nextTick](https://github.com/vuejs/vue/blob/612fb89547/src/core/util/next-tick.js#L87-L110) 方法将 `flushSchedulerQueue` 方法（最终执行队列的函数）作为参数传入，并放入一个 `callback` 数组中，在 `nextTick` 方法中比较关键的方法就是 `timerFunc` 方法了，在[这里](https://github.com/vuejs/vue/blob/v2.6.14/src/core/util/next-tick.js#L42-L85)，它会对根据环境判断来降级选取适合的**宏/微任务**来对视图进行异步更新的操作，降级策略如下：  
 > Promise > MutationObserver > setImmediate > setTimeout  
 

@@ -1,5 +1,6 @@
 # computed 实现原理
 本文基于 [Vue 2.16.14](https://github.com/vuejs/vue) 版本  
+
 计算属性的特点是基于**它们的响应式依赖进行缓存的**，只有在响应式依赖发生改变时，才能重新会重新求值，这就意味着，当计算属性中的响应式依赖未发生改变时，计算属性会立即返回之前计算的结果。
 
 ## 核心源码分析 {#source}
@@ -77,6 +78,8 @@ class Watcher {
 }
 ```
 那么在什么时候 computed 属性会被触发？在 `Render` 函数执行到对应计算属性时，它的 `getter` 函数就会被触发。  
+
+
 它的 `getter` 函数在哪里定义？答案是在 [defineComputed](https://github.com/vuejs/vue/blob/v2.6.14/src/core/instance/state.js#L213-L242) 方法中。
 ```js
 export function defineComputed (
@@ -110,7 +113,9 @@ export function defineComputed (
   Object.defineProperty(target, key, sharedPropertyDefinition)
 }
 ```
-这个函数主要是使用 `Object.defineProperty` 将 `component` 上的属性挂载到 `vm` 组件实例上，并代理了它的 `getter` 和 `setter` 属性。`get` 属性对应的是 `createComputedGetter`，而 `set` 在开发中比较少用到，一般是空函数。这里我们重点关注一下 [createComputedGetter](https://github.com/vuejs/vue/blob/v2.6.14/src/core/instance/state.js#L244-L257) 函数，它也就是我们在 `Render` 函数触发计算属性时执行的方法。
+这个函数主要是使用 `Object.defineProperty` 将 `component` 上的属性挂载到 `vm` 组件实例上，并代理了它的 `getter` 和 `setter` 属性。  
+
+`get` 属性对应的是 `createComputedGetter`，而 `set` 在开发中比较少用到，一般是空函数。这里我们重点关注一下 [createComputedGetter](https://github.com/vuejs/vue/blob/v2.6.14/src/core/instance/state.js#L244-L257) 函数，它也就是我们在 `Render` 函数触发计算属性时执行的方法。
 ```js
 function createComputedGetter (key) {
   return function computedGetter () {
@@ -165,7 +170,9 @@ new Vue({
   }
 })
 ```
-在首次 `initComputed` 的时候，并不会触发 `cardBrand`，在 渲染 `watcher` 中在取 `carBrand` 属性时，首次触发 `computedGetter` 函数，注意，是在**渲染 `watcher` 中取的值**(Dep.target = 渲染 watcher。要想 `brand` 的值改变，`carBrand` 计算属性也会执行的话，那么就需要将计算`watcher` 装进渲染 `watcher` 中，所以我们需要 `depend` 方法把让渲染 `watcher` 定义计算 `watcher` :
+在首次 `initComputed` 的时候，并不会触发 `cardBrand`，在 渲染 `watcher` 中在取 `carBrand` 属性时，首次触发 `computedGetter` 函数，注意，是在**渲染 `watcher` 中取的值**(Dep.target = 渲染 watcher。  
+
+要想 `brand` 的值改变，`carBrand` 计算属性也会执行，那么就需要将计算`watcher` 装进渲染 `watcher` 中，所以我们需要 `depend` 方法把让渲染 `watcher` 定义计算 `watcher` :
 ```js
 /**
  * Depend on all deps collected by this watcher.
