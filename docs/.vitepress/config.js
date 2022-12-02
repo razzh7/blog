@@ -11,7 +11,7 @@ export default {
       { text: '阅读', link: '/book/' },
       { text: '关于我', link: '/me/' }
     ],
-    socialLinks: [{ icon: 'github', link: 'https://github.com/rzhAvenir/blog' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/rzhAvenir' }],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present Razzh'
