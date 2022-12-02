@@ -4,7 +4,8 @@
 
 ## 思考 {#think}
 
-- Vuex 是如何引入 Vue 项目的？  
+Vuex 是如何引入 Vue 项目的？  
+
    1、先安装 `Vuex` ，再通过 import 引入项目  
    2、使用 `Vue.use(Vuex)` ，将 Vuex 作为插件安装  
    3、实例化 `new Vuex.Store({...})` ，将其放入 `new Vue()` 的 options 中
@@ -59,7 +60,9 @@ function initUse(Vue: GlobalAPI) {
 ```
 
 代码行中的第一个高亮代码，是 Vue.use 对于 plugin 之外的参数进行处理，最终目的是将其传入到用户定义的 install 方法中去，但 Vuex 的 install 方法并不需要额外的参数配置，所以只需要执行 Vue.use 方法就可以达到安装的目的。  
+
 在这之后就会执行 Vuex 定义的 `install` 安装方法: `plugin.install.apply(plugin, args)` ,将 `this` 指向 `plugin` 本身，并将 args 数组传入。  
+
 来到 Vue 的 install 方法:
 
 ```js{13}
@@ -119,6 +122,7 @@ Vue.options = {
 - 执行了 `beforeCreate` 钩子
 
 beforeCreate 钩子会在此处执行。为什么会选择在 beforeCreate 执行？主要的原因还是在于 beforeCreate 的时候 Vue 的 options 的选项都还没被初始化，若在其他的 hook 中安装 vuex，那么可能会导致需要用到 vuex 中的 state 的数据的时候但 vuex 并没有安装的情况出现，所以这样做避免了出现数据错误的情况。  
+
 vuexInit 的执行，首先就是将 this.$options 赋值给了 options,这里其实有个问题，这个 `this` 是谁？我们知道 js 的 this 指向是通过运行时的环境决定的，所以我们需要知道  vuexInit **在哪里被执行**，通过前面的分析应该是在 beforeCreate hook 执行的时候，来到代码中：
 ::: details 点击展开 code
 ```js
@@ -178,8 +182,8 @@ this.$store.commit('type', playload)
 ```
 
 就是这样！解释一下两个 if 分支的逻辑：  
-1、如果当前是根组件，就把传入的 Store 实例挂在根节点 vm 上  
-2、如果当前组件是子组件，就从 options 中的 parent 找到 Store 实例挂载子组件的 vm 上，这里注意是**引用赋值**，因此每个子组件都可以访问构造 `VueComponent` 实例上的`$store`
+1. 如果当前是根组件，就把传入的 Store 实例挂在根节点 vm 上  
+2. 如果当前组件是子组件，就从 options 中的 parent 找到 Store 实例挂载子组件的 vm 上，这里注意是**引用赋值**，因此每个子组件都可以访问构造 `VueComponent` 实例上的 `$store`
 
 ## 总结 {#summary}
 

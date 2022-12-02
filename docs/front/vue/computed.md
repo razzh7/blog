@@ -56,7 +56,7 @@ function initComputed (vm: Component, computed: Object) {
 4. 检验每个计算属性是否与 `props` 或者 `data` 里的属性重复，若重复则在生产环境下报错。 
 
 
-这里的第3点 `new Watcher` 是传入`const computedWatcherOptions = { lazy: true }`，意味着初始化计算属性的时候并不会立刻进行求值：
+这里的第3点 `new Watcher` 是传入 `const computedWatcherOptions = { lazy: true }`，意味着初始化计算属性的时候并不会立刻进行求值：
 ```js {14,15,16}
 class Watcher {
   constructor (

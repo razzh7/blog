@@ -1,10 +1,4 @@
 # JS 模块化
-
-参考文章:  
-[segmentfault - 前端模块化](https://segmentfault.com/a/1190000017466120)  
-[blog - 前端模块化](https://codingwithalice.github.io/2020/03/17/%E9%9D%A2%E8%AF%95-AMD%E5%92%8CCMD%E5%8C%BA%E5%88%AB/)  
-[掘金 - 前端模块化](https://juejin.cn/post/6844903469933920263)
-
 介绍：  
 当今主流的模块化方案主要有四种：
 
@@ -145,5 +139,9 @@ myMath.mult(2, 3)
 | 时机     | **运行时加载**，加载的是 **整个模块 - 所有接口**，只有在 <u>脚本运行</u> 完才会生成 | **编译时输出** 接口，**可以单独加载某个接口**，在代码 <u>静态解析</u> 阶段就会生成 |
 | 加载原理 | 一个模块就是一个脚本，`require` 命令第一次加载该脚本，就会执行整个脚本，然后在内存生成一个对象<br>以后需要用到这个模块的时候，就会到 `exports` 属性上面取值。也就是说，**不会再次执行该模块，而是到 缓存 之中取值，只会在第一次加载时运行一次** |
 
+## 参考文章 {#refer}
+[segmentfault - 前端模块化](https://segmentfault.com/a/1190000017466120)  
+[blog - 前端模块化](https://codingwithalice.github.io/2020/03/17/%E9%9D%A2%E8%AF%95-AMD%E5%92%8CCMD%E5%8C%BA%E5%88%AB/)  
+[掘金 - 前端模块化](https://juejin.cn/post/6844903469933920263)
 
 <theEnd/>   
