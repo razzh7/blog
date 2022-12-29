@@ -7,7 +7,7 @@
   title: '你不知道的JavaScript（上）',
   spine: '#F7DF4B',
   tag: 'JS',
-  cover: 'https://tva1.sinaimg.cn/large/e6c9d24egy1h20zo01oxfj207i09r3yr.jpg'
+  cover: '/img/js1.jpg'
 },
 ]"></VirtualBook>
 
@@ -54,7 +54,7 @@ cover: '/img/javascript.jpeg'
   title: '你不知道的JavaScript（中）',
   spine: '#F7DF4B',
   tag: 'JS',
-  cover: 'https://tva1.sinaimg.cn/large/e6c9d24egy1h20zo01oxfj207i09r3yr.jpg'
+  cover: '/img/js2.jpg'
 },{
   title: '深入理解ES6',
   spine: '#FFFCD0',
