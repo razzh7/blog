@@ -17,13 +17,13 @@ jobs:
     # 任务流步骤
     steps:
     - name: 拉取代码
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
     
     - name: 安装Pnpm
-    - uses: pnpm/action-setup@v2
+      uses: pnpm/action-setup@v2
     
     - name: 安装NodeJS
-    - uses: actions/setup-node@v3
+      uses: actions/setup-node@v3
       with: 
         node-version: 16.x
         cache: pnpm
