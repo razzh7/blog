@@ -9,7 +9,6 @@ on:
     - master
 
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # 运行在哪个系统上
     runs-on: ubuntu-latest
@@ -36,11 +35,11 @@ jobs:
       with:
         host: ${{ secrets.REMOTE_HOST }}
         username: ${{ secrets.REMOTE_USER }}
-        password: ${{ REMOTE_PASS }}
+        password: ${{ secrets.REMOTE_PASS }}
         port: 22
         # 本地打包后的目录
         source: 'docs/.vitepress/dist'
         # 服务器存放dist的目录
-        target: ${{ REMOTE_TARGET }}
+        target: ${{ secrets.REMOTE_TARGET }}
     
     
