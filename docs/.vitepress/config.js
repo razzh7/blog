@@ -4,7 +4,7 @@ export default {
   base: '/',
   lang: 'zh-CN',
   themeConfig: {
-    lastUpdated: '最后更新时间',
+    lastUpdated: true,
     logo: '/bird.png',
     nav: [
       { text: '前端', link: '/front/vue/reactive' },
@@ -13,12 +13,16 @@ export default {
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/rzhAvenir' }],
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present Razzh'
+      message: '@xiaohao-blog',
+      copyright: '浙ICP备2022036392号-1'
     },
     sidebar: {
       '/front/': frontEnd()
-    }
+    },
+    editLink: {
+			pattern: 'https://github.com/rzhAvenir/blog/edit/master/docs/:path',
+			text: '在 GitHub 上编辑',
+		},
   },
   head: [['link', { rel: 'shortcut icon', href: '/bird.png' }]]
 }
