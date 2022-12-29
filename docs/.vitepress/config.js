@@ -1,7 +1,7 @@
 export default {
   title: '小豪的blog',
   description: 'razzh Razzh',
-  base: '/blog/',
+  base: '/',
   lang: 'zh-CN',
   themeConfig: {
     lastUpdated: '最后更新时间',
