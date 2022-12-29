@@ -20,7 +20,7 @@ export default {
       '/front/': frontEnd()
     }
   },
-  head: [['link', { rel: 'shortcut icon', href: '/blog/bird.png' }]]
+  head: [['link', { rel: 'shortcut icon', href: '/bird.png' }]]
 }
 
 function frontEnd() {

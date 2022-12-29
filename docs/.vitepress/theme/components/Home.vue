@@ -11,7 +11,7 @@
       Time never speaks but answered all the questions.
     </p>
     <p class="actions">
-      <a class="get-started" href="/blog/front/vue/reactive">
+      <a class="get-started" href="/front/vue/reactive">
         开始阅读
         <svg
           class="icon"

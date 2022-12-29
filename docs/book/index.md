@@ -18,12 +18,12 @@
 title: '时间从来不语，却回答了所有问题',
 spine: '#E5CA9D',
 tag: '',
-cover: '/blog/img/time.jpeg'
+cover: '/img/time.jpeg'
 },{
   title: '停止你的内在战争',
   spine: '#E45D42',
   tag: '',
-  cover: '/blog/img/stopwar.jpeg'
+  cover: '/img/stopwar.jpeg'
 }
 ]"></VirtualBook>
 
@@ -34,12 +34,12 @@ cover: '/blog/img/time.jpeg'
   title: '深入浅出Vue.js',
   spine: '#52B47E',
   tag: 'Vue',
-  cover: '/blog/img/vue2.jpeg'
+  cover: '/img/vue2.jpeg'
 },{
   title: 'JavaScript设计模式与开发实践',
   spine: '#1D4699',
   tag: '',
-  cover: '/blog/img/jsDesign.jpeg'
+  cover: '/img/jsDesign.jpeg'
 },{
   title: 'Vue.js 设计与实现',
   spine: '#52B47E',
@@ -49,7 +49,7 @@ cover: '/blog/img/time.jpeg'
 title: 'JavaScript高级程序设计',
 spine: '#9C1A31',
 tag: 'JS',
-cover: '/blog/img/javascript.jpeg'
+cover: '/img/javascript.jpeg'
 },{
   title: '你不知道的JavaScript（中）',
   spine: '#F7DF4B',
@@ -59,40 +59,40 @@ cover: '/blog/img/javascript.jpeg'
   title: '深入理解ES6',
   spine: '#FFFCD0',
   tag: 'ES6',
-  cover: '/blog/img/es6.jpeg'
+  cover: '/img/es6.jpeg'
 },{
   title: 'web性能权威指南',
   spine: '#FFFFFF',
   tag: 'web',
-  cover: '/blog/img/web.jpeg'
+  cover: '/img/web.jpeg'
 },{
   title: '深入浅出nodeJS',
   spine: '#FFFFFF',
   tag: 'node',
-  cover: '/blog/img/node.jpeg'
+  cover: '/img/node.jpeg'
 },
 {
   title: '深入React技术栈',
   spine: '#122D44',
   tag: 'React',
-  cover: '/blog/img/react.jpeg'
+  cover: '/img/react.jpeg'
 },
 {
   title: 'WebKit技术内幕',
   spine: '#9F3A35',
   tag: 'web',
-  cover: '/blog/img/webkit.jpeg'
+  cover: '/img/webkit.jpeg'
 },
 {
   title: '前端架构师',
   spine: '#829F41',
   tag: 'web',
-  cover: '/blog/img/webbuilder.jpeg'
+  cover: '/img/webbuilder.jpeg'
 },
 {
   title: 'CSS权威指南',
   spine: '#009497',
   tag: 'css',
-  cover: '/blog/img/cssauth.jpeg'
+  cover: '/img/cssauth.jpeg'
 }
 ]"></VirtualBook>

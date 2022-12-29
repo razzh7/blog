@@ -18,4 +18,4 @@ function create(fn) {
 
 ## this 指向 {#this}
 
-关于 `new` 时候的 `this` 指向，可以参考这篇 [this 指向总结](https://rzhavenir.github.io/blog/front/js/this.html#new-bind)。
+关于 `new` 时候的 `this` 指向，可以参考这篇 [this 指向总结](https://rzhavenir.github.io/front/js/this.html#new-bind)。
