@@ -1,3 +1,5 @@
+import algolia from './algolia'
+
 export default {
   title: '小豪的blog',
   description: 'razzh Razzh',
@@ -23,6 +25,7 @@ export default {
 			pattern: 'https://github.com/rzhAvenir/blog/edit/master/docs/:path',
 			text: '在 GitHub 上编辑',
 		},
+    algolia
   },
   head: [['link', { rel: 'shortcut icon', href: '/bird.png' }]]
 }
