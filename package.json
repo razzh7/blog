@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "razzh",
   "license": "MIT",
+  "packageManager": "pnpm@7.17.1",
   "scripts": {
     "dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
