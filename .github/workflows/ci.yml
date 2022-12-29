@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    # 运行在哪个系统上
+    # 运行在 ubuntu 上
     runs-on: ubuntu-latest
 
     # 任务流步骤
