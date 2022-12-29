@@ -28,6 +28,9 @@ jobs:
         
     - name: 安装依赖
       run: pnpm install
+
+    - name: 打包
+      run: pnpm docs:build
       
     - name: 部署博客
       uses: appleboy/scp-action@master
