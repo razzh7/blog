@@ -17,7 +17,7 @@ export default {
     socialLinks: [{ icon: 'github', link: 'https://github.com/rzhAvenir' }],
     footer: {
       message: 'Copyright © 2023-xiaohao',
-      copyright: '浙ICP备2022036392号-1'
+      copyright: '<a href="https://beian.miit.gov.cn">浙ICP备17035458号-1</a>'
     },
     sidebar: {
       '/front/': frontEnd()
